@@ -243,7 +243,7 @@ RCT_EXPORT_METHOD(activeListener:(NSString *)type resolve:(RCTPromiseResolveBloc
                                body:@{@"value": [NSNumber numberWithFloat:newValue]}];
         }
         if (skipSetVolumeCount > 0) {
-            skipSetVolumeCount--;
+            skipSetVolumeCount = 0;
         }
     }
 }
